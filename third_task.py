@@ -67,6 +67,7 @@ def speech_to_text(filename=None, bytes=None, request_id=uuid.uuid4().hex, topic
         raise SpeechException('Unknown error.\nCode: %s\n\n%s' % (response.code, response.read()))
 
 #Странно продублирован Else, а так же в оригинальном документе съехали отступы, из-за чего не всегда было понятно что означает код.
+#Предположительно этот кусок кода часть программы для преобразования голосовой речи в текст.
 
 
 сlass SpeechException(Exception):
